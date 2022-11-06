@@ -1,38 +1,108 @@
-.App {
+html{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.app{
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.error-box{
+  background-color: orangered;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 4px 4px 4px grey;
+  border-radius: 0.5rem;
+  padding: 5rem 0.5rem;
+  color: #fff;
+}
+.error-box__title{
+  font-size: 5rem;
+  margin: 0;
+}
+.error-box__p{
+ margin-bottom: 2rem;
+}
+.error-box__btn{
+  padding: 1rem 2rem;
+  text-align: none;
+  color: #fff;
+  background-color: #0000ff;
+  border-radius: 0.5rem;
+
+}
+a{
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 700;
+  background-color: blue;
+  border-radius: 100px;
+  transition: all 1s ease-in-out;
+}
+button:hover {
+  background-color: skyblue;
+}
+/* nav styles */
+.nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  padding: 1rem;
+  background-color: #ccccff;
+}
+.nav li {
+  list-style-type:none ;
+}
+.nav li a{
+  color: #000019;
+}
+.logo{
+  font-size: 1.5rem;
+  border: 2px solid black;
+  margin-right: 5rem;
+}
+/* home style */
+.home{
+  margin: 0 auto;
+  max-width: 600px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error-f{
+  background-color: black;
+  padding: 2rem;
+  color:#fff;
+  font-size: 1.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error-f .pre span{
+  display: inline-block;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.error-f .pre{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0.5rem;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 300px) and (max-width: 480px) {
+  .nav{
+    flex-direction: column;
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+  .logo{
+    margin-right: 0;
+  }
+  .error-f{
+    width: 80%;
   }
 }
